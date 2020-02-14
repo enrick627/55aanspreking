@@ -2,18 +2,15 @@
 /*
  * ANALYSE
  * ========
+ * Aanspreking.Load:
+ * TOON     titels
+ * TOON     
  * VRAAG voornaam fammilienaam 
  * 
- * BEREKEN  eerste letter van voornaam (string.substring(0,1).toupper)
- *          famillienaam in hoofdletters(string.toupper)
+ * BEREKEN  aanspreking
+ *          BEREKEN     voorinitiaal 
  *          
  * TOON     voornaam.famillienaam wanneer op knop geduwt word
- // VRAAG voornaam fammilienaam 
- // 
- // BEREKEN  eerste letter van voornaam (string.substring(0,1).toupper)
- //          famillienaam in hoofdletters(string.toupper)
- //          
- // TOON     voornaam.famillienaam wanneer op knop geduwt word
  * 
  */
 
@@ -40,25 +37,34 @@ namespace aanspreking
         private void Voornaam_Texbox_TextChanged(object sender, EventArgs e)
         {
             string voornaam;
-            voornaam = Console.ReadLine();
+            voornaam = Voornaaminvoer.Text;
+            
         }
 
         private void famillienaam_Textbox_TextChanged(object sender, EventArgs e)
         {
             string famillienaam;
-            famillienaam = Console.ReadLine();
+            famillienaam = famillienaaminvoer.Text;
             
         }
 
         private void Aanspreking_Button_Click(object sender, EventArgs e)
         {
-            
+            string voornaam, famillienaam, aanspreking;
+            string voorinitiaal, famillieInitiaal, famillierest;
+
+            voornaam = Voornaaminvoer.Text;
+
+            famillienaam = famillienaaminvoer.Text;
+
+            voorinitiaal = voornaam.Substring(0, 1).ToUpper();
+            famillieInitiaal = famillienaam.Substring(0,1)
 
         }
 
         private void aanspreking_Textbox_TextChanged(object sender, EventArgs e)
         {
-
+           
         }
     }
 }

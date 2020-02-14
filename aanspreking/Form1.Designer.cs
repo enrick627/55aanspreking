@@ -31,8 +31,8 @@
             this.Voornaam = new System.Windows.Forms.Label();
             this.familienaam = new System.Windows.Forms.Label();
             this.Aanspreking = new System.Windows.Forms.Label();
-            this.Voornaam_Texbox = new System.Windows.Forms.TextBox();
-            this.famillienaam_Textbox = new System.Windows.Forms.TextBox();
+            this.Voornaaminvoer = new System.Windows.Forms.TextBox();
+            this.famillienaaminvoer = new System.Windows.Forms.TextBox();
             this.aanspreking_Textbox = new System.Windows.Forms.TextBox();
             this.Aanspreking_Button = new System.Windows.Forms.Button();
             this.SuspendLayout();
@@ -58,39 +58,39 @@
             // Aanspreking
             // 
             this.Aanspreking.AutoSize = true;
-            this.Aanspreking.Location = new System.Drawing.Point(12, 117);
+            this.Aanspreking.Location = new System.Drawing.Point(12, 94);
             this.Aanspreking.Name = "Aanspreking";
             this.Aanspreking.Size = new System.Drawing.Size(65, 13);
             this.Aanspreking.TabIndex = 2;
             this.Aanspreking.Text = "aanspreking";
             // 
-            // Voornaam_Texbox
+            // Voornaaminvoer
             // 
-            this.Voornaam_Texbox.Location = new System.Drawing.Point(98, 6);
-            this.Voornaam_Texbox.Name = "Voornaam_Texbox";
-            this.Voornaam_Texbox.Size = new System.Drawing.Size(100, 20);
-            this.Voornaam_Texbox.TabIndex = 3;
-            this.Voornaam_Texbox.TextChanged += new System.EventHandler(this.Voornaam_Texbox_TextChanged);
+            this.Voornaaminvoer.Location = new System.Drawing.Point(98, 6);
+            this.Voornaaminvoer.Name = "Voornaaminvoer";
+            this.Voornaaminvoer.Size = new System.Drawing.Size(129, 20);
+            this.Voornaaminvoer.TabIndex = 3;
+            this.Voornaaminvoer.TextChanged += new System.EventHandler(this.Voornaam_Texbox_TextChanged);
             // 
-            // famillienaam_Textbox
+            // famillienaaminvoer
             // 
-            this.famillienaam_Textbox.Location = new System.Drawing.Point(98, 32);
-            this.famillienaam_Textbox.Name = "famillienaam_Textbox";
-            this.famillienaam_Textbox.Size = new System.Drawing.Size(100, 20);
-            this.famillienaam_Textbox.TabIndex = 4;
-            this.famillienaam_Textbox.TextChanged += new System.EventHandler(this.famillienaam_Textbox_TextChanged);
+            this.famillienaaminvoer.Location = new System.Drawing.Point(98, 32);
+            this.famillienaaminvoer.Name = "famillienaaminvoer";
+            this.famillienaaminvoer.Size = new System.Drawing.Size(129, 20);
+            this.famillienaaminvoer.TabIndex = 4;
+            this.famillienaaminvoer.TextChanged += new System.EventHandler(this.famillienaam_Textbox_TextChanged);
             // 
             // aanspreking_Textbox
             // 
-            this.aanspreking_Textbox.Location = new System.Drawing.Point(98, 114);
+            this.aanspreking_Textbox.Location = new System.Drawing.Point(98, 87);
             this.aanspreking_Textbox.Name = "aanspreking_Textbox";
-            this.aanspreking_Textbox.Size = new System.Drawing.Size(100, 20);
+            this.aanspreking_Textbox.Size = new System.Drawing.Size(129, 20);
             this.aanspreking_Textbox.TabIndex = 5;
             this.aanspreking_Textbox.TextChanged += new System.EventHandler(this.aanspreking_Textbox_TextChanged);
             // 
             // Aanspreking_Button
             // 
-            this.Aanspreking_Button.Location = new System.Drawing.Point(98, 71);
+            this.Aanspreking_Button.Location = new System.Drawing.Point(98, 58);
             this.Aanspreking_Button.Name = "Aanspreking_Button";
             this.Aanspreking_Button.Size = new System.Drawing.Size(129, 23);
             this.Aanspreking_Button.TabIndex = 6;
@@ -105,8 +105,8 @@
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.Aanspreking_Button);
             this.Controls.Add(this.aanspreking_Textbox);
-            this.Controls.Add(this.famillienaam_Textbox);
-            this.Controls.Add(this.Voornaam_Texbox);
+            this.Controls.Add(this.famillienaaminvoer);
+            this.Controls.Add(this.Voornaaminvoer);
             this.Controls.Add(this.Aanspreking);
             this.Controls.Add(this.familienaam);
             this.Controls.Add(this.Voornaam);
@@ -122,8 +122,8 @@
         private System.Windows.Forms.Label Voornaam;
         private System.Windows.Forms.Label familienaam;
         private System.Windows.Forms.Label Aanspreking;
-        private System.Windows.Forms.TextBox Voornaam_Texbox;
-        private System.Windows.Forms.TextBox famillienaam_Textbox;
+        private System.Windows.Forms.TextBox Voornaaminvoer;
+        private System.Windows.Forms.TextBox famillienaaminvoer;
         private System.Windows.Forms.TextBox aanspreking_Textbox;
         private System.Windows.Forms.Button Aanspreking_Button;
     }
