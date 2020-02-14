@@ -78,6 +78,7 @@
             this.famillienaam_Textbox.Name = "famillienaam_Textbox";
             this.famillienaam_Textbox.Size = new System.Drawing.Size(100, 20);
             this.famillienaam_Textbox.TabIndex = 4;
+            this.famillienaam_Textbox.TextChanged += new System.EventHandler(this.famillienaam_Textbox_TextChanged);
             // 
             // aanspreking_Textbox
             // 
@@ -85,6 +86,7 @@
             this.aanspreking_Textbox.Name = "aanspreking_Textbox";
             this.aanspreking_Textbox.Size = new System.Drawing.Size(100, 20);
             this.aanspreking_Textbox.TabIndex = 5;
+            this.aanspreking_Textbox.TextChanged += new System.EventHandler(this.aanspreking_Textbox_TextChanged);
             // 
             // Aanspreking_Button
             // 
@@ -94,6 +96,7 @@
             this.Aanspreking_Button.TabIndex = 6;
             this.Aanspreking_Button.Text = "Toon Aanspreking";
             this.Aanspreking_Button.UseVisualStyleBackColor = true;
+            this.Aanspreking_Button.Click += new System.EventHandler(this.Aanspreking_Button_Click);
             // 
             // Aanspreking_Form
             // 
