@@ -85,11 +85,12 @@ namespace aanspreking
         }
         private void Aanspreking_FormClosing(object sender, FormClosingEventArgs e)
         {
-            DialogResult antwoord = MessageBox.show("ik kan niet volge"),MessageBoXButton.YesNo;
-            if (antwoord!=DialogResult.yes )
+            DialogResult antwoord = MessageBox.Show("sluit dit!");
+            if (antwoord!=DialogResult.Yes)
             {
                 e.Cancel = true;
             }
+            
         }
 
     }
