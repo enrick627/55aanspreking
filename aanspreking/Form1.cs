@@ -50,15 +50,23 @@ namespace aanspreking
 
         private void Aanspreking_Button_Click(object sender, EventArgs e)
         {
-            string voornaam, famillienaam, aanspreking;
-            string voorinitiaal, famillieInitiaal, famillierest;
+            // VARIABELEN
+            string voornaam, familienaam, aanspreking;
+            string voorInitiaal, familieInitiaal, familieRest;
 
-            voornaam = Voornaaminvoer.Text;
+            // INPUT
+            // LEES voornaam
+            voornaam = voornaamInvoer.Text;
+            // LEES familienaam
+            familienaam = familienaamInvoer.Text;
 
-            famillienaam = famillienaaminvoer.Text;
-
-            voorinitiaal = voornaam.Substring(0, 1).ToUpper();
-            famillieInitiaal = famillienaam.Substring(0,1)
+            // PROCESSING
+            // BEREKEN AANSPREKING
+            // BEREKEN voorInitiaal (= eerst letter voornaam in hoofdletter)
+            voorInitiaal = voornaam.Substring(0, 1).ToUpper();
+            // BEREKEN FamilieInitiaal (= eerst letter familienaam in hoofdletter)
+            familieInitiaal = familienaam.Substring(0, 1).ToUpper();
+            //BEREKEN FamilieRest
 
         }
 
