@@ -51,14 +51,14 @@ namespace aanspreking
         private void Aanspreking_Button_Click(object sender, EventArgs e)
         {
             // VARIABELEN
-            string voornaam, familienaam, aanspreking;
+            string voornaam, familienaam, aanspreking, toonAanspreking;
             string voorInitiaal, familieInitiaal, familieRest;
 
             // INPUT
             // LEES voornaam
-            voornaam = voornaamInvoer.Text;
+            voornaam = Voornaaminvoer.Text;
             // LEES familienaam
-            familienaam = familienaamInvoer.Text;
+            familienaam = famillienaaminvoer.Text;
 
             // PROCESSING
             // BEREKEN AANSPREKING
@@ -67,12 +67,30 @@ namespace aanspreking
             // BEREKEN FamilieInitiaal (= eerst letter familienaam in hoofdletter)
             familieInitiaal = familienaam.Substring(0, 1).ToUpper();
             //BEREKEN FamilieRest
+            aanspreking = $"{voorInitiaal}.{familieInitiaal}";
 
+            toonAanspreking = Aanspreking.Text;
         }
 
         private void aanspreking_Textbox_TextChanged(object sender, EventArgs e)
         {
            
         }
+
+        private void Sluiten_Click(object sender, EventArgs e)
+        {
+            Close();
+
+
+        }
+        private void Aanspreking_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            DialogResult antwoord = MessageBox.show("ik kan niet volge"),MessageBoXButton.YesNo;
+            if (antwoord!=DialogResult.yes )
+            {
+                e.Cancel = true;
+            }
+        }
+
     }
 }

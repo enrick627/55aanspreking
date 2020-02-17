@@ -35,6 +35,7 @@
             this.famillienaaminvoer = new System.Windows.Forms.TextBox();
             this.aanspreking_Textbox = new System.Windows.Forms.TextBox();
             this.Aanspreking_Button = new System.Windows.Forms.Button();
+            this.Sluiten = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // Voornaam
@@ -98,11 +99,22 @@
             this.Aanspreking_Button.UseVisualStyleBackColor = true;
             this.Aanspreking_Button.Click += new System.EventHandler(this.Aanspreking_Button_Click);
             // 
+            // Sluiten
+            // 
+            this.Sluiten.Location = new System.Drawing.Point(98, 113);
+            this.Sluiten.Name = "Sluiten";
+            this.Sluiten.Size = new System.Drawing.Size(129, 25);
+            this.Sluiten.TabIndex = 7;
+            this.Sluiten.Text = "Sluiten";
+            this.Sluiten.UseVisualStyleBackColor = true;
+            this.Sluiten.Click += new System.EventHandler(this.Sluiten_Click);
+            // 
             // Aanspreking_Form
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(259, 186);
+            this.Controls.Add(this.Sluiten);
             this.Controls.Add(this.Aanspreking_Button);
             this.Controls.Add(this.aanspreking_Textbox);
             this.Controls.Add(this.famillienaaminvoer);
@@ -126,6 +138,7 @@
         private System.Windows.Forms.TextBox famillienaaminvoer;
         private System.Windows.Forms.TextBox aanspreking_Textbox;
         private System.Windows.Forms.Button Aanspreking_Button;
+        private System.Windows.Forms.Button Sluiten;
     }
 }
 
