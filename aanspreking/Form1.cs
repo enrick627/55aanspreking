@@ -66,12 +66,13 @@ namespace aanspreking
             voorInitiaal = voornaam.Substring(0, 1).ToUpper();
             // BEREKEN FamilieInitiaal (= eerst letter familienaam in hoofdletter)
             familieInitiaal = familienaam.Substring(0, 1).ToUpper();
-            //BEREKEN FamilieRest
-            aanspreking = $"{voorInitiaal}.{familieInitiaal}";
 
-            toonAanspreking = aanspreking.;
-            
-            
+            familieRest = familienaam.Substring(1);
+            //BEREKEN FamilieRest
+            aanspreking = $"{voorInitiaal}. {familieInitiaal}{familieRest}";
+          
+            aanspreking_Textbox.Text = aanspreking;
+
         }
 
         private void aanspreking_Textbox_TextChanged(object sender, EventArgs e)
