@@ -69,7 +69,9 @@ namespace aanspreking
             //BEREKEN FamilieRest
             aanspreking = $"{voorInitiaal}.{familieInitiaal}";
 
-            toonAanspreking = Aanspreking.Text;
+            toonAanspreking = aanspreking.;
+            
+            
         }
 
         private void aanspreking_Textbox_TextChanged(object sender, EventArgs e)

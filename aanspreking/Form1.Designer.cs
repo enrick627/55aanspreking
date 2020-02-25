@@ -36,64 +36,72 @@
             this.aanspreking_Textbox = new System.Windows.Forms.TextBox();
             this.Aanspreking_Button = new System.Windows.Forms.Button();
             this.Sluiten = new System.Windows.Forms.Button();
+            this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             this.SuspendLayout();
             // 
             // Voornaam
             // 
             this.Voornaam.AutoSize = true;
-            this.Voornaam.Location = new System.Drawing.Point(12, 9);
+            this.Voornaam.Location = new System.Drawing.Point(16, 11);
+            this.Voornaam.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.Voornaam.Name = "Voornaam";
-            this.Voornaam.Size = new System.Drawing.Size(54, 13);
+            this.Voornaam.Size = new System.Drawing.Size(71, 17);
             this.Voornaam.TabIndex = 0;
             this.Voornaam.Text = "voornaam";
             // 
             // familienaam
             // 
             this.familienaam.AutoSize = true;
-            this.familienaam.Location = new System.Drawing.Point(12, 32);
+            this.familienaam.Location = new System.Drawing.Point(16, 39);
+            this.familienaam.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.familienaam.Name = "familienaam";
-            this.familienaam.Size = new System.Drawing.Size(64, 13);
+            this.familienaam.Size = new System.Drawing.Size(86, 17);
             this.familienaam.TabIndex = 1;
             this.familienaam.Text = "famillienaam";
             // 
             // Aanspreking
             // 
             this.Aanspreking.AutoSize = true;
-            this.Aanspreking.Location = new System.Drawing.Point(12, 94);
+            this.Aanspreking.Location = new System.Drawing.Point(16, 116);
+            this.Aanspreking.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.Aanspreking.Name = "Aanspreking";
-            this.Aanspreking.Size = new System.Drawing.Size(65, 13);
+            this.Aanspreking.Size = new System.Drawing.Size(86, 17);
             this.Aanspreking.TabIndex = 2;
             this.Aanspreking.Text = "aanspreking";
             // 
             // Voornaaminvoer
             // 
-            this.Voornaaminvoer.Location = new System.Drawing.Point(98, 6);
+            this.Voornaaminvoer.Location = new System.Drawing.Point(131, 7);
+            this.Voornaaminvoer.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Voornaaminvoer.Name = "Voornaaminvoer";
-            this.Voornaaminvoer.Size = new System.Drawing.Size(129, 20);
+            this.Voornaaminvoer.Size = new System.Drawing.Size(171, 22);
             this.Voornaaminvoer.TabIndex = 3;
             this.Voornaaminvoer.TextChanged += new System.EventHandler(this.Voornaam_Texbox_TextChanged);
             // 
             // famillienaaminvoer
             // 
-            this.famillienaaminvoer.Location = new System.Drawing.Point(98, 32);
+            this.famillienaaminvoer.Location = new System.Drawing.Point(131, 39);
+            this.famillienaaminvoer.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.famillienaaminvoer.Name = "famillienaaminvoer";
-            this.famillienaaminvoer.Size = new System.Drawing.Size(129, 20);
+            this.famillienaaminvoer.Size = new System.Drawing.Size(171, 22);
             this.famillienaaminvoer.TabIndex = 4;
             this.famillienaaminvoer.TextChanged += new System.EventHandler(this.famillienaam_Textbox_TextChanged);
             // 
             // aanspreking_Textbox
             // 
-            this.aanspreking_Textbox.Location = new System.Drawing.Point(98, 87);
+            this.aanspreking_Textbox.Location = new System.Drawing.Point(131, 107);
+            this.aanspreking_Textbox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.aanspreking_Textbox.Name = "aanspreking_Textbox";
-            this.aanspreking_Textbox.Size = new System.Drawing.Size(129, 20);
+            this.aanspreking_Textbox.Size = new System.Drawing.Size(171, 22);
             this.aanspreking_Textbox.TabIndex = 5;
             this.aanspreking_Textbox.TextChanged += new System.EventHandler(this.aanspreking_Textbox_TextChanged);
             // 
             // Aanspreking_Button
             // 
-            this.Aanspreking_Button.Location = new System.Drawing.Point(98, 58);
+            this.Aanspreking_Button.Location = new System.Drawing.Point(131, 71);
+            this.Aanspreking_Button.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Aanspreking_Button.Name = "Aanspreking_Button";
-            this.Aanspreking_Button.Size = new System.Drawing.Size(129, 23);
+            this.Aanspreking_Button.Size = new System.Drawing.Size(172, 28);
             this.Aanspreking_Button.TabIndex = 6;
             this.Aanspreking_Button.Text = "Toon Aanspreking";
             this.Aanspreking_Button.UseVisualStyleBackColor = true;
@@ -101,19 +109,29 @@
             // 
             // Sluiten
             // 
-            this.Sluiten.Location = new System.Drawing.Point(98, 113);
+            this.Sluiten.Location = new System.Drawing.Point(131, 139);
+            this.Sluiten.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Sluiten.Name = "Sluiten";
-            this.Sluiten.Size = new System.Drawing.Size(129, 25);
+            this.Sluiten.Size = new System.Drawing.Size(172, 31);
             this.Sluiten.TabIndex = 7;
             this.Sluiten.Text = "Sluiten";
             this.Sluiten.UseVisualStyleBackColor = true;
             this.Sluiten.Click += new System.EventHandler(this.Sluiten_Click);
             // 
+            // linkLabel1
+            // 
+            this.linkLabel1.AutoSize = true;
+            this.linkLabel1.Location = new System.Drawing.Point(259, 29);
+            this.linkLabel1.Name = "linkLabel1";
+            this.linkLabel1.Size = new System.Drawing.Size(0, 17);
+            this.linkLabel1.TabIndex = 8;
+            // 
             // Aanspreking_Form
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(259, 186);
+            this.ClientSize = new System.Drawing.Size(345, 229);
+            this.Controls.Add(this.linkLabel1);
             this.Controls.Add(this.Sluiten);
             this.Controls.Add(this.Aanspreking_Button);
             this.Controls.Add(this.aanspreking_Textbox);
@@ -122,6 +140,7 @@
             this.Controls.Add(this.Aanspreking);
             this.Controls.Add(this.familienaam);
             this.Controls.Add(this.Voornaam);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "Aanspreking_Form";
             this.Text = "Form1";
             this.ResumeLayout(false);
@@ -139,6 +158,7 @@
         private System.Windows.Forms.TextBox aanspreking_Textbox;
         private System.Windows.Forms.Button Aanspreking_Button;
         private System.Windows.Forms.Button Sluiten;
+        private System.Windows.Forms.LinkLabel linkLabel1;
     }
 }
 
